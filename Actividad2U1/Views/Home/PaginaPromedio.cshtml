@@ -1,0 +1,29 @@
+﻿@model Actividad2U1.Models.PaginaPromedioViewModel
+<html>
+<head>  
+    <title>PROMEDIO</title>
+</head>
+
+<body>
+    <h2>Calificaciones</h2>
+
+    <form method="post" action="~/Home/PaginaPromedio">
+
+        <label>Calificacion1</label>
+        <input type="number" name="Calificacion1" value="@Model.Calificacion1" /> <br />
+
+        <label>Calificacion2</label>
+        <input type="number" name="Calificacion2" value="@Model.Calificacion2" /> <br />
+
+        <label>Calificacion3</label>
+        <input type="number" name="Calificacion3" value="@Model.Calificacion3" /> <br />
+
+        <input type="submit" value="Promedio" /> <br />
+
+        <label>RESULTADO</label>
+        <input type="number" readonly value="@Model.resultado" />
+
+    </form>
+    
+</body>
+</html>
