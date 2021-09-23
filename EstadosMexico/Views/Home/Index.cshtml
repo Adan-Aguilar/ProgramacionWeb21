@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<EstadosMexico.Models.Estado>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -18,26 +18,15 @@
     <main>
 
         <ul>
-            <li>
-                <img src="img/estados/coahuila.png" />
-                Coahuila
-            </li>
-            <li>
-                <img src="img/estados/coahuila.png" />
-                Coahuila
-            </li>
-            <li>
-                <img src="img/estados/coahuila.png" />
-                Coahuila
-            </li>
-            <li>
-                <img src="img/estados/coahuila.png" />
-                Coahuila
-            </li>
-            <li>
-                <img src="img/estados/coahuila.png" />
-                Coahuila
-            </li>
+            @foreach (var estado in Model)
+            {
+                <li>
+                    <img src="img/estados/@(estado.Nombre.Replace(" ","")).png" />
+                    @estado.Nombre
+                </li>
+
+            }
+
 
         </ul>
 

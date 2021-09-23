@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EstadosMexico.Models;
 
 namespace EstadosMexico.Controllers
 {
@@ -10,7 +11,13 @@ namespace EstadosMexico.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            //OBTENER LOS ESTADOS DE LA BASE DE DATOS
+            mexicoContext context = new mexicoContext();
+            var estados = context.Estados.OrderBy(x => x.Nombre);
+
+            //PASARLOS A LA VISTA
+            return View(estados);
+
         }
     }
 }
