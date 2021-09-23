@@ -12,5 +12,7 @@ namespace Actividad2U1.Models
         public int Calificacion3 { get; set; }
 
         public int resultado { get { return (Calificacion1 + Calificacion2 + Calificacion3)/3; } }
+
+
     }
 }

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad1U1", "Actividad1U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad2U1", "Actividad2U1\Actividad2U1.csproj", "{227CAD0F-897F-4E03-B474-7881C2C9BE1B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UNIDAD 2", "UNIDAD 2", "{1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstadosMexico", "EstadosMexico\EstadosMexico.csproj", "{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{227CAD0F-897F-4E03-B474-7881C2C9BE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{227CAD0F-897F-4E03-B474-7881C2C9BE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{227CAD0F-897F-4E03-B474-7881C2C9BE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F} = {1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34E63A9F-B679-4145-92C4-CC3CA431456D}

@@ -16,12 +16,9 @@ namespace Actividad2U1.Controllers
 
     
 
-        public IActionResult PaginaPromedio(int Calificacion1, int Calificacion2, int Calificacion3)
+        public IActionResult PaginaPromedio(PaginaPromedioViewModel vm)
         {
-            PaginaPromedioViewModel vm = new PaginaPromedioViewModel();
-            vm.Calificacion1 = Calificacion1;
-            vm.Calificacion2 = Calificacion2;
-            vm.Calificacion3 = Calificacion3;
+            
             return View (vm);
         }
 
