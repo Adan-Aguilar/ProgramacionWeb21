@@ -27,6 +27,8 @@ namespace Actividad2U1.Controllers
             return Ok((Calificacion1 + califiacion2 + calificacion3) / 3);
         }
 
+
+
     
     }
 }

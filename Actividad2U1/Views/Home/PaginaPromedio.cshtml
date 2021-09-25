@@ -10,7 +10,7 @@
     <form method="post" action="~/Home/PaginaPromedio">
 
         <label>Calificacion 1</label>
-        <input type="number" name="Calificacion1" value="@Model.Calificacion1" /> <br />
+        <input  type="number" name="Calificacion1" value="@Model.Calificacion1" /> <br />
 
         <label>Calificacion 2</label>
         <input type="number" name="Calificacion2" value="@Model.Calificacion2" /> <br />
@@ -22,6 +22,17 @@
 
         <label>RESULTADO</label>
         <input type="number" readonly value="@Model.resultado" />
+
+        @if (Model.resultado>=70)
+        {
+           <label>APROBADO</label>
+
+          
+        }else {<label>REPROBADO</label>}
+
+   
+
+        
 
     </form>
     
