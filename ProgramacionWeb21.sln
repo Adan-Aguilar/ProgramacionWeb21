@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad1U1", "Actividad1U1\Actividad1U1.csproj", "{6914B057-34A1-4560-B1CC-930B4BA24583}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad1U1", "Actividad1U1\Actividad1U1.csproj", "{6914B057-34A1-4560-B1CC-930B4BA24583}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad2U1", "Actividad2U1\Actividad2U1.csproj", "{227CAD0F-897F-4E03-B474-7881C2C9BE1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad2U1", "Actividad2U1\Actividad2U1.csproj", "{227CAD0F-897F-4E03-B474-7881C2C9BE1B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UNIDAD 2", "UNIDAD 2", "{1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstadosMexico", "EstadosMexico\EstadosMexico.csproj", "{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstadosMexico", "EstadosMexico\EstadosMexico.csproj", "{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act2PresidentesMexico", "Act2PresidentesMexico\Act2PresidentesMexico.csproj", "{E1A5AE61-6619-4279-A104-E11435F7EF2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +31,17 @@ Global
 		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A5AE61-6619-4279-A104-E11435F7EF2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A5AE61-6619-4279-A104-E11435F7EF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A5AE61-6619-4279-A104-E11435F7EF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A5AE61-6619-4279-A104-E11435F7EF2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6FF1BDD8-DA7E-4AE7-A3AB-B282BB2FA54F} = {1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}
+		{E1A5AE61-6619-4279-A104-E11435F7EF2E} = {1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34E63A9F-B679-4145-92C4-CC3CA431456D}
