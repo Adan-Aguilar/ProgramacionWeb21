@@ -1,7 +1,18 @@
-﻿
+﻿@model IEnumerable<Actividad3MapaCurricular.Models.Carrera>
 @{
     Layout = "Layout";
+
 }
 
-<h1>Index</h1>
+<h1>Oferta Académica</h1>
+
+
+<ol class="rectangle-list">
+    @foreach (var carrera in Model)
+    {
+        <li><a href="~/Home/Informacion/@carrera.Nombre.Replace(" ","-")">@carrera.Plan @carrera.Nombre</a></li>
+    }
+
+
+</ol>
 
