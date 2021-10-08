@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Actividad3MapaCurricular.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Actividad3MapaCurricular.Controllers
 {
@@ -19,6 +20,8 @@ namespace Actividad3MapaCurricular.Controllers
             return View(carrera);
         }
 
+
+        [Route("{id}")]
         public IActionResult Informacion (string id)
         {
             id=id.Replace("-", " ");
@@ -29,6 +32,21 @@ namespace Actividad3MapaCurricular.Controllers
             {
                 return RedirectToAction("Index");
             }
+            return View(carrera);
+        }
+
+        [Route("{id}-Mapa")]
+        public IActionResult MapaCurricular (string id)
+        {
+            id = id.Replace("-", " ");
+            mapa_curricularContext context = new mapa_curricularContext();
+            var carrera = context.Carreras.Include(x=>x.Materia).FirstOrDefault(x => x.Nombre == id);
+            if (carrera==null)
+            {
+                return RedirectToAction("Index");
+            }
+
+
             return View(carrera);
         }
     }

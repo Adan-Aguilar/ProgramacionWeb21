@@ -10,7 +10,7 @@
 <ol class="rectangle-list">
     @foreach (var carrera in Model)
     {
-        <li><a href="~/Home/Informacion/@carrera.Nombre.Replace(" ","-")">@carrera.Plan @carrera.Nombre</a></li>
+        <li><a href="~/@carrera.Nombre.Replace(" ","-")">@carrera.Plan @carrera.Nombre</a></li>
     }
 
 
