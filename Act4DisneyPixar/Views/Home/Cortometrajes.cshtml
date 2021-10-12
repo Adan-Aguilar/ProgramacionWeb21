@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Act4DisneyPixar.Models.Categoria>
+@{
+    Layout = "_Layout";
+}
+
+<div id="principalPeliculas">
+
+    <div id="pelis">
+        @foreach (var cat in Model)
+        {
+            <h1>@cat.Nombre</h1>
+
+            @foreach (var corto in cat.Cortometrajes)
+            {
+                <div>
+                    <a class="imgPelicula" href="Pequeño.html">
+                        <img src="~/images/portadas/@(corto.Id)_pc.jpg" alt="@corto.Nombre">
+                    </a>
+                    <div class="nombrePelicula">
+                        <p>@corto.Nombre</p>
+                    </div>
+                </div>
+            }
+
+
+        }
+
+
+
+    </div>
+</div>
+

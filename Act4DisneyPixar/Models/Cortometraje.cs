@@ -12,6 +12,6 @@ namespace Act4DisneyPixar.Models
         public string Descripcion { get; set; }
         public int? IdCategoria { get; set; }
 
-        public virtual Categorium IdCategoriaNavigation { get; set; }
+        public virtual Categoria IdCategoriaNavigation { get; set; }
     }
 }

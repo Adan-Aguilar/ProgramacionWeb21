@@ -22,17 +22,17 @@
             </p>
 
 
-            @*<div class="personajes">
+            <div class="personajes">
                 <h2>@Model.Nombre</h2>
-                @foreach (var pe in Model)
+                @foreach (var pe in Model.Apariciones)
                 {
                     <div>
                         <a>
-                            <img src="~/images/personajes/@(pe.Id).jpg" alt="@(pe.Id)">
+                            <img src="~/images/personajes/@(pe.IdPersonaje).jpg" alt="@(pe.IdPersonajeNavigation.Nombre)">
                         </a>
 
                         <div class="nombrePelicula">
-                            <p>@p</p>
+                            <p>@pe.IdPersonajeNavigation.Nombre</p>
                         </div>
                     </div>
 
@@ -40,7 +40,7 @@
 
 
 
-            </div>*@
+            </div>
     </div>
 </div>
 

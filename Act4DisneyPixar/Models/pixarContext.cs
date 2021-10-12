@@ -18,7 +18,7 @@ namespace Act4DisneyPixar.Models
         }
 
         public virtual DbSet<Aparicione> Apariciones { get; set; }
-        public virtual DbSet<Categorium> Categoria { get; set; }
+        public virtual DbSet<Categoria> Categoria { get; set; }
         public virtual DbSet<Cortometraje> Cortometrajes { get; set; }
         public virtual DbSet<Pelicula> Peliculas { get; set; }
         public virtual DbSet<Personaje> Personajes { get; set; }
@@ -64,7 +64,7 @@ namespace Act4DisneyPixar.Models
                     .HasConstraintName("fkPersonaje");
             });
 
-            modelBuilder.Entity<Categorium>(entity =>
+            modelBuilder.Entity<Categoria>(entity =>
             {
                 entity.ToTable("categoria");
 

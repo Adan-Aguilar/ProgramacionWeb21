@@ -43,10 +43,27 @@ namespace Act4DisneyPixar.Controllers
                 return RedirectToAction("Index");
             }
         }
-        public IActionResult Cortos()
+
+        [Route("cortos")]
+        public IActionResult Cortometrajes()
         {
-            
-            return View();
+            pixarContext context = new pixarContext();
+            var cortos = context.Categoria.Include(x => x.Cortometrajes).OrderBy(x => x.Nombre);
+
+            return View(cortos);
+        }
+
+        [Route("cortos/{nombre}")]
+        public IActionResult InformacionCortos(string nombre )
+        {
+
+            string nombre2 = nombre == null ? "" : nombre.Replace("-", " ");
+
+
+            pixarContext context = new pixarContext();
+            var infocortos = context.Cortometrajes;
+
+            return View(infocortos);
         }
     }
 }

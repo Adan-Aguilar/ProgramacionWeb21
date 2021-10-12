@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace Act4DisneyPixar.Models
 {
-    public partial class Categorium
+    public partial class Categoria
     {
-        public Categorium()
+        public Categoria()
         {
             Cortometrajes = new HashSet<Cortometraje>();
         }
