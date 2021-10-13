@@ -57,13 +57,17 @@ namespace Act4DisneyPixar.Controllers
         public IActionResult InformacionCortos(string nombre )
         {
 
-            string nombre2 = nombre == null ? "" : nombre.Replace("-", " ");
-
+            nombre = nombre.Replace("-"," ");
 
             pixarContext context = new pixarContext();
-            var infocortos = context.Cortometrajes;
+            var corto = context.Cortometrajes.FirstOrDefault(x=>x.Nombre.Replace("-"," ")==nombre);
 
-            return View(infocortos);
+            if (corto==null)
+            {
+                return RedirectToAction("Cortometrajes");
+            }
+
+            return View(corto);
         }
     }
 }

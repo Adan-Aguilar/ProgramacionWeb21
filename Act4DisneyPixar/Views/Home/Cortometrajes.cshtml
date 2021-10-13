@@ -13,7 +13,7 @@
             @foreach (var corto in cat.Cortometrajes)
             {
                 <div>
-                    <a class="imgPelicula" href="Pequeño.html">
+                    <a class="imgPelicula" href="~/cortos/@corto.Nombre.Replace(" ", "-")">
                         <img src="~/images/portadas/@(corto.Id)_pc.jpg" alt="@corto.Nombre">
                     </a>
                     <div class="nombrePelicula">
