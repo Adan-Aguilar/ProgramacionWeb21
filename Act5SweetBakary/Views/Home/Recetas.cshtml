@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Act5SweetBakary.Models.Categoria>
+@{
+    Layout = "Layout";
+}
+
+
+@foreach (var c in Model)
+{
+<section class="contenedor">
+
+    <h2>@c.Nombre</h2>
+
+    @foreach (var r in c.Receta)
+    {
+        <div>
+            <div>
+                <img src="~/imagenes/recetas/@(r.Id).png" />
+            </div>
+            <a href="receta.html">
+                <h2>@r.Nombre</h2>
+            </a>
+            <p>@r.Descripcion</p>
+        </div>
+    }
+
+
+
+
+</section>
+
+}
+
+
+
