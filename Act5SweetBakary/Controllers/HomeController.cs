@@ -15,5 +15,10 @@ namespace Act5SweetBakary.Controllers
             return View();
 
         }
+
+        public IActionResult Productos ()
+        {
+            return View();
+        }
     }
 }
