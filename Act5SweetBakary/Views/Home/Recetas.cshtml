@@ -6,29 +6,39 @@
 
 @foreach (var c in Model)
 {
-<section class="contenedor">
 
-    <h2>@c.Nombre</h2>
 
-    @foreach (var r in c.Receta)
-    {
-        <div>
+    <section class="contenedor">
+
+        <h2>@c.Nombre</h2>
+
+        @foreach (var r in c.Receta)
+        {
+
+
             <div>
-                <img src="~/imagenes/recetas/@(r.Id).png" />
+                <div>
+                    <img src="~/imagenes/recetas/@(r.Id).png" />
+                </div>
+                <a href="~/Receta/@(r.Nombre.Replace(" ","-"))">
+                    <h2>@r.Nombre</h2>
+                </a>
+                <p>@r.Descripcion</p>
             </div>
-            <a href="receta.html">
-                <h2>@r.Nombre</h2>
-            </a>
-            <p>@r.Descripcion</p>
-        </div>
-    }
+
+
+        }
 
 
 
 
-</section>
+    </section>
 
 }
+
+
+
+
 
 
 
