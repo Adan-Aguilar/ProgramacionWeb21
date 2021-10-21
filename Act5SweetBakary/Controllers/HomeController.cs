@@ -39,7 +39,7 @@ namespace Act5SweetBakary.Controllers
         }
 
         [Route("Receta/{Nombre}")]
-        public IActionResult Recetas(string nombre)
+        public IActionResult Receta(string nombre)
         {
             nombre = nombre.Replace("-", " ");
             sweetbakeryContext context = new sweetbakeryContext();
@@ -55,6 +55,7 @@ namespace Act5SweetBakary.Controllers
                 Random rnd = new Random();
                 var datos = context.Recetas
                     .Where(x=>x.Id!=r.Id)
+                    .ToList()
                     .OrderBy(x => rnd.Next())
                     .Take(3)
                     .Select(x=> new Receta {Id=x.Id, Nombre=x.Nombre });
