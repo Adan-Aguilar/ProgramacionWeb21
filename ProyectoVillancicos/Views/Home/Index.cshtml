@@ -9,6 +9,15 @@
     <a href="index.html">En español</a>
 </div>
 <ul>
-    <li><a href="villancico.html">Mi Burrito Sabanero</a></li>
- 
+    @foreach (var villancico in Model)
+    {
+        
+        <li><a href="~/Home/villancico/@(villancico.Id)">@villancico.Nombre</a></li>
+    }
+
+
+
+
+
+
 </ul>

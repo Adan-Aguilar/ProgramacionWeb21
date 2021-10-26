@@ -16,10 +16,26 @@ namespace ProyectoVillancicos.Controllers
             return View(villancico);
         }
 
-        //public IActionResult Villancico()
-        //{
+        public IActionResult Villancico(int? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("Index");
+            }
 
-        //}
+            villancicosContext context = new villancicosContext();
+            var villancico = context.Villancicos.FirstOrDefault(x => x.Id == id);
+
+            if (villancico == null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(villancico);
+            }
+
+        }
     }
     
 }
