@@ -15,9 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act2PresidentesMexico", "Ac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad3MapaCurricular", "Actividad3MapaCurricular\Actividad3MapaCurricular.csproj", "{53FCD1DD-AAD2-4E33-B026-B8FA0A467451}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act4DisneyPixar", "Act4DisneyPixar\Act4DisneyPixar.csproj", "{69062C89-B307-4663-A766-8977C926E42E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act4DisneyPixar", "Act4DisneyPixar\Act4DisneyPixar.csproj", "{69062C89-B307-4663-A766-8977C926E42E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5SweetBakary", "Act5SweetBakary\Act5SweetBakary.csproj", "{82059805-BFB5-43B9-96DE-0321257C2F27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5SweetBakary", "Act5SweetBakary\Act5SweetBakary.csproj", "{82059805-BFB5-43B9-96DE-0321257C2F27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UNIDAD 3", "UNIDAD 3", "{306D3CBF-3E74-4FC3-8593-44AA7A11292C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TAREA UNIDAD 2", "TAREA UNIDAD 2", "{3785C48E-FACB-4424-9CC0-BAE614100A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoVillancicos", "ProyectoVillancicos\ProyectoVillancicos.csproj", "{5843901F-B37D-420B-B455-BC7D67459C3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +59,10 @@ Global
 		{82059805-BFB5-43B9-96DE-0321257C2F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82059805-BFB5-43B9-96DE-0321257C2F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82059805-BFB5-43B9-96DE-0321257C2F27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5843901F-B37D-420B-B455-BC7D67459C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5843901F-B37D-420B-B455-BC7D67459C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5843901F-B37D-420B-B455-BC7D67459C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5843901F-B37D-420B-B455-BC7D67459C3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +73,7 @@ Global
 		{53FCD1DD-AAD2-4E33-B026-B8FA0A467451} = {1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}
 		{69062C89-B307-4663-A766-8977C926E42E} = {1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}
 		{82059805-BFB5-43B9-96DE-0321257C2F27} = {1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}
+		{5843901F-B37D-420B-B455-BC7D67459C3D} = {3785C48E-FACB-4424-9CC0-BAE614100A29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34E63A9F-B679-4145-92C4-CC3CA431456D}
