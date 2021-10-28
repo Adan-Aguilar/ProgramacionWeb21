@@ -3,16 +3,15 @@
     Layout = "_Layout";
 }
 
-<div class="menu">
-    <a href="index.html" class="active">Todos</a>
-    <a href="ingles.html">En inglés</a>
-    <a href="index.html">En español</a>
-</div>
+
+
+
 <ul>
+
+
     @foreach (var villancico in Model)
     {
-        
-        <li><a href="~/Home/villancico/@(villancico.Id)">@villancico.Nombre</a></li>
+    <li><a href="~/Villancico/@villancico.Nombre.Replace(" ","-")">@villancico.Nombre</a></li>
     }
 
 

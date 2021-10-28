@@ -1,0 +1,17 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+
+<ul>
+
+
+    @foreach (var villancico in Model)
+    {
+
+        <li><a href="~/Villancico/@villancico.Nombre.Replace(" ","-")">@villancico.Nombre</a></li>
+    }
+
+</ul>
+

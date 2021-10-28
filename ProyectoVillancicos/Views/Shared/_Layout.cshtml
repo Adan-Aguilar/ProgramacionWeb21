@@ -1,18 +1,23 @@
-﻿
-<!DOCTYPE html>
-<html>
+﻿<html>
 <head>
-    <meta charset="utf-8" />
     <link href="~/estilos.css" rel="stylesheet" />
     <title>Villancicos</title>
 </head>
 <body>
+
     <header>
         <h1>Villancicos</h1>
         <h2>Feliz Navidad</h2>
     </header>
+
+    <div class="menu">
+        <a href="~/">Todos</a>
+        <a href="~/Ingles" class="active">En inglés</a>
+        <a href="~/español">En español</a>
+    </div>
     <main>
         @RenderBody()
+
     </main>
     <footer>
         Programación Web - Unidad 2 - ADAN AGUILAR

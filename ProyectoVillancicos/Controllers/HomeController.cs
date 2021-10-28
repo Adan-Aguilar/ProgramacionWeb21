@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace ProyectoVillancicos.Controllers
 {
     public class HomeController : Controller
@@ -16,15 +17,17 @@ namespace ProyectoVillancicos.Controllers
             return View(villancico);
         }
 
-        public IActionResult Villancico(int? id)
+        [Route("Villancico/{nombre}")]
+        public IActionResult Villancico(string nombre)
         {
-            if (id == null)
+            if (nombre == null)
             {
                 return RedirectToAction("Index");
             }
-
+            nombre = nombre.Replace("-", " ");
             villancicosContext context = new villancicosContext();
-            var villancico = context.Villancicos.FirstOrDefault(x => x.Id == id);
+            
+            var villancico = context.Villancicos.FirstOrDefault(x => x.Nombre==nombre);
 
             if (villancico == null)
             {
@@ -35,6 +38,40 @@ namespace ProyectoVillancicos.Controllers
                 return View(villancico);
             }
 
+        }
+
+        [Route("ingles")]
+        public IActionResult Ingles()
+        {
+            
+
+            villancicosContext context = new villancicosContext();
+            
+
+            var villancico = context.Villancicos
+
+                
+                
+                .OrderBy(x => x.Nombre).Where(x => x.Idioma=="Inglés");
+
+            return View(villancico);
+        }
+
+        [Route("español")]
+        public IActionResult Español()
+        {
+
+
+            villancicosContext context = new villancicosContext();
+
+
+            var villancico = context.Villancicos
+
+
+
+                .OrderBy(x => x.Nombre).Where(x => x.Idioma == "Español");
+
+            return View(villancico);
         }
     }
     

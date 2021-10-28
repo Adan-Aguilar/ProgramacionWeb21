@@ -1,7 +1,21 @@
-﻿
+﻿@model ProyectoVillancicos.Models.Villancico
 @{
-    ViewData["Title"] = "Villancico";
+    Layout = "_Layout";
 }
 
-<h1>Villancico</h1>
+
+<nav>
+    <a href="javascript:window.history.back();">Regresar</a>
+</nav>
+<h2>@Model.Nombre</h2>
+<h3>@Model.Compositor,@Model.Anyo</h3>
+
+<iframe width="560" height="315" src="@Model.VideoUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<article>
+    <p>
+        @Html.Raw(Model.Letra)
+    </p>
+    
+</article>
 
