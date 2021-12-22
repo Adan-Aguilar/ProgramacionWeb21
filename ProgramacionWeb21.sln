@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoVillancicos", "Proy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitStore", "..\..\..\OneDrive\Escritorio\FruitStore\FruitStore\FruitStore.csproj", "{BAA4F901-43E7-4D76-967E-DA73CAA55577}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U3RazasPerros", "..\..\..\OneDrive\Documentos\U3RazasPerros\U3RazasPerros\U3RazasPerros.csproj", "{561163A0-A1B1-4A21-99BC-75E67D241110}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petalos", "..\..\..\Downloads\Floreria\Ejercicio U3 - Petalos y Flores\Petalos y Flores\Petalos\Petalos\Petalos.csproj", "{BBA5D77E-FB7E-4226-81DB-BC0548631C01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{BAA4F901-43E7-4D76-967E-DA73CAA55577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAA4F901-43E7-4D76-967E-DA73CAA55577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAA4F901-43E7-4D76-967E-DA73CAA55577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{561163A0-A1B1-4A21-99BC-75E67D241110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561163A0-A1B1-4A21-99BC-75E67D241110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561163A0-A1B1-4A21-99BC-75E67D241110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561163A0-A1B1-4A21-99BC-75E67D241110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA5D77E-FB7E-4226-81DB-BC0548631C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA5D77E-FB7E-4226-81DB-BC0548631C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA5D77E-FB7E-4226-81DB-BC0548631C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA5D77E-FB7E-4226-81DB-BC0548631C01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +93,8 @@ Global
 		{82059805-BFB5-43B9-96DE-0321257C2F27} = {1887CD3E-D3E8-468D-8B49-5A305DBB8D5C}
 		{5843901F-B37D-420B-B455-BC7D67459C3D} = {3785C48E-FACB-4424-9CC0-BAE614100A29}
 		{BAA4F901-43E7-4D76-967E-DA73CAA55577} = {306D3CBF-3E74-4FC3-8593-44AA7A11292C}
+		{561163A0-A1B1-4A21-99BC-75E67D241110} = {306D3CBF-3E74-4FC3-8593-44AA7A11292C}
+		{BBA5D77E-FB7E-4226-81DB-BC0548631C01} = {306D3CBF-3E74-4FC3-8593-44AA7A11292C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34E63A9F-B679-4145-92C4-CC3CA431456D}
